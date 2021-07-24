@@ -1,0 +1,20 @@
+.containerMainContent {
+    flex:848px;
+    background-color: cyan;
+    display:flex;
+    flex-direction: row;
+    margin-top: 0;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.leftMainContent{
+flex:315px;
+background-color:darkblue;
+
+}
+
+.rightMainContent{
+flex:925px;
+background-color: blueviolet;
+}

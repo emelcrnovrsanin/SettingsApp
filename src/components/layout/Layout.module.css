@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+  }
+.window{
+    background-color: blue;
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    display:flex;
+    flex-direction: column;
+    width: 1440px;
+}
+
+
