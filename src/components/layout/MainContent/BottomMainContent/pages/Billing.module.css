@@ -69,7 +69,7 @@ th {
   letter-spacing: 0em;
   color: #011f4b;
 }
-tr:nth-child(even) {
+tr:nth-child(odd) {
   background-color: #ffffff;
 }
 .tableContainer {

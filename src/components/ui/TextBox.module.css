@@ -20,6 +20,10 @@
   margin-left: 1px;
   margin-top: 5px;
 }
+.textBox:hover {
+  cursor: default;
+}
+
 .innerTextBox {
   flex: 1;
   margin-left: 18px;

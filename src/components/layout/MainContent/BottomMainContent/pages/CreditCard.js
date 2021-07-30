@@ -9,6 +9,7 @@ export default function CreditCard() {
     <div className={classes.bottomMainContent}>
       <div className={classes.leftBottom}>
         <TextBox heading="Your credit cards" description={description} />
+
       </div>
       <div className={classes.rightBottom}>
         <div className={classes.formContainer}>
