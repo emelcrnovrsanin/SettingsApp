@@ -17,7 +17,6 @@
   font-weight: 700;
   line-height: 19px;
   letter-spacing: 0em;
-  
 }
 .checkBoxContainer {
   position: relative;
@@ -30,6 +29,9 @@
   align-items: center;
   padding: 5%;
   margin-top: 5%;
+}
+.newCard :hover{
+    cursor:pointer;
 }
 
 .checkClass {

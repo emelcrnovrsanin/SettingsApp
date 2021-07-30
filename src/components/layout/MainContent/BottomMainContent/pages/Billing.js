@@ -1,5 +1,4 @@
 import classes from "./Billing.module.css";
-import TextBox from "../../../../ui/TextBox";
 
 const billingInformatons = [
   {
@@ -19,15 +18,8 @@ const billingInformatons = [
   },
 ];
 
-const description =
-  "This is the personal info section of your account. Here you can easily change your basic info. After you finish updating this section please click the save changes button";
-
 function Billing() {
   return (
-    <div className={classes.bottomMainContent}>
-      <div className={classes.leftBottom}>
-        <TextBox heading="Billing info" description={description} />
-      </div>
       <div className={classes.billingContainer}>
         <div className={classes.tableHeading}>
           <div className={classes.heading}>Billing information</div>
@@ -52,7 +44,6 @@ function Billing() {
           </table>
         </div>
       </div>
-    </div>
   );
 }
 

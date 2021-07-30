@@ -1,13 +1,17 @@
 .bottomMainContent {
-    flex: 1;
-    border: 4px solid purple;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  
-  .leftBottom {
-    display: flex;
-    border: 4px solid blue;
-    width: 315px;
-  }
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.leftBottom {
+  display: flex;
+  flex: 0.4;
+}
+
+.rightBottom {
+  flex: 1;
+  display: flex;
+  margin-top: 4%;
+}

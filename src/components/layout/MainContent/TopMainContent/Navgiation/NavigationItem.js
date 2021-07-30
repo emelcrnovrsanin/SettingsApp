@@ -11,8 +11,8 @@ function NavigationItem(props) {
           alt="iconNavbar"
         />
       </Link>
-      <Link to={props.link}>
-        <p>{props.text}</p>
+      <Link to={props.link} style={{ textDecoration: 'none' }}>
+        <text className={classes.textNavbar}>{props.text}</text>
       </Link>
     </div>
   );

@@ -7,9 +7,6 @@
   flex-wrap: nowrap;
   flex-direction: row;
 }
-.dim:hover {
-  border: 3px solid #0db2f2;
-}
 
 .leftDiv {
   display: flex;

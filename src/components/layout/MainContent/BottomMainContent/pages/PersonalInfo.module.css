@@ -1,38 +1,12 @@
-.bottomMainContent {
-  flex: 1;
-  border: 4px solid purple;
+.formDiv {
+  width: 100%;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.leftBottom {
-  display: flex;
-  border: 4px solid blue;
-  width: 315px;
-}
-@media (max-width: 800px) {
-  .leftBottom {
-    font-size: 10px;
-    line-height: 10px;
-    align-content: center;
-  }
+  flex-direction: column;
 }
 .rightBottom {
   flex: 1;
   display: flex;
-  border: 4px solid purple;
 }
-
-/*Settings for Form*/
-
-.formDiv {
-  width: 100%;
-  display: flex;
-  border: 4px solid grey;
-  flex-direction: column;
-}
-
 .nameLastEmailMobile {
   display: flex;
   flex-direction: row;
@@ -60,7 +34,6 @@
   display: flex;
   height: 80px;
   background-color: #ffffff;
-  border: 2px solid red;
   padding-left: 5%;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -125,7 +98,6 @@
   height: 56px;
   background-color: #f3f6f9;
   border-radius: 10px;
-
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 20px;
@@ -147,14 +119,15 @@
     height: 36px;
   }
 }
-/**/
+
 .buttonSettings {
   width: 118px;
   height: 32px;
   background-color: #1bc5bd;
   color: #ffffff;
-
-  font-family: Roboto;
+  border: none;
+  border-radius: 5px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;

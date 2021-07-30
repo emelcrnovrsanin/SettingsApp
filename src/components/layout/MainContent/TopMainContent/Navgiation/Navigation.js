@@ -1,20 +1,15 @@
 import classes from "./Navigation.module.css";
-
 import personal from "./ImagesNavigation/personal.png";
-import personalBlue from "./ImagesNavigation/personalBlue.png";
 import payment from "./ImagesNavigation/payment.png";
-import paymentBlue from "./ImagesNavigation/paymentBlue.png";
 import creditCard from "./ImagesNavigation/creditCard.png";
-import creditCardBlue from "./ImagesNavigation/creditCardBlue.png";
 import billing from "./ImagesNavigation/billing.png";
-import billingBlue from "./ImagesNavigation/billingBlue.png";
-import { STATEMENT_OR_BLOCK_KEYS } from "@babel/types";
+
 import NavigationItem from "./NavigationItem";
 
 const navItems = [
   {
     image: personal,
-    text: "Persona info",
+    text: "Personal info",
     id: 1,
     link: "/",
   },

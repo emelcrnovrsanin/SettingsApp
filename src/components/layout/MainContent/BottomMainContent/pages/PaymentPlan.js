@@ -6,9 +6,6 @@ import second from "./ImagesPaymentPlan/second.png";
 import third from "./ImagesPaymentPlan/third.png";
 import fourth from "./ImagesPaymentPlan/fourth.png";
 
-
-
-
 const paymenetPlans = [
   {
     name: "Starter",
@@ -50,8 +47,10 @@ const paymenetPlans = [
 const description =
   "This is the personal info section of your account. Here you can easily change your basic info. After you finish updating this section please click the save changes button";
 
- const textCancel = "Before you unsubscribe consider changing the payment plan. If you are uncertain which plan best suites your business do not hesitate to contact our support and we will do our best to assist you in choosing the right plan for you. ";
- const textCancelTwo = "If you cancel your subscription you won’t be able to use any of the platform features and your payments will be discontinued. ";
+const textCancel =
+  "Before you unsubscribe consider changing the payment plan. If you are uncertain which plan best suites your business do not hesitate to contact our support and we will do our best to assist you in choosing the right plan for you. ";
+const textCancelTwo =
+  "If you cancel your subscription you won’t be able to use any of the platform features and your payments will be discontinued. ";
 function PaymentPlan() {
   const [selectedPlan, setSelectedPlan] = useState("Starter");
 
@@ -65,13 +64,9 @@ function PaymentPlan() {
     setShowPlans(value);
   }
 
- 
   return (
-    <div className={classes.bottomMainContent}>
-      <div className={classes.leftBottom}>
-        <TextBox heading="Payment plan" description={description} />
-      </div>
-      <div className={classes.container}>
+    <div className={classes.container}>
+    <div className={classes.paymentPlansContainer}>
         {showPlans &&
           paymenetPlans.map((paymentPlan) => (
             <div className={classes.paymentPlan}>
@@ -116,39 +111,52 @@ function PaymentPlan() {
           ))}
         {!showPlans && (
           <div>
-            <div className={classes.containerCancel}> 
-            <div className={classes.firstColumnCancel}>
-            <text className={classes.cancelTitle}>We are sorry to see you go</text>
-            <br /><text className={classes.textCancelSet}> {textCancel}</text>
-            </div>
-            <div className={classes.secondColumnCancel}>
-              <text className={classes.titleCancel}>OUR JOURNEY SO FAR</text>
-              <div className={classes.threeCards}>
-                <div className={classes.cancelCard}>
-                  <span className={classes.numberClass}>4</span>
-                  <span className={classes.spanCard}>PROJECTS</span>
-                </div>
-                <div className={classes.cancelCard}>
-                  <span className={classes.numberClass}>3</span>
-                  <span className={classes.spanCard}>GETEWAYSS</span>
-                </div>
-                <div className={classes.cancelCard}>
-                  <span className={classes.numberClass}>$14K</span>
-                  <span className={classes.spanCard}>PAYMENTS</span>
+            <div className={classes.containerCancel}>
+              <div className={classes.firstColumnCancel}>
+                <text className={classes.cancelTitle}>
+                  We are sorry to see you go
+                </text>
+                <br />
+                <text className={classes.textCancelSet}> {textCancel}</text>
+              </div>
+              <div className={classes.secondColumnCancel}>
+                <text className={classes.titleCancel}>OUR JOURNEY SO FAR</text>
+                <div className={classes.threeCards}>
+                  <div className={classes.cancelCard}>
+                    <span className={classes.numberClass}>4</span>
+                    <span className={classes.spanCard}>PROJECTS</span>
+                  </div>
+                  <div className={classes.cancelCard}>
+                    <span className={classes.numberClass}>3</span>
+                    <span className={classes.spanCard}>GETEWAYSS</span>
+                  </div>
+                  <div className={classes.cancelCard}>
+                    <span className={classes.numberClass}>$14K</span>
+                    <span className={classes.spanCard}>PAYMENTS</span>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className={classes.thirdColumnCancel}>
-              <span className={classes.cancelTitle}>Are you sure you want to unsubscribe?</span>
-              <text className={classes.textCancelSet}>{textCancelTwo}</text>
-            </div>
-            <div className={classes.fourthColumnCancel}>
-            <button className={classes.buttonCacleConfirm}>Confirm</button>
-            <button className={classes.buttonCacleConfirm} onClick={() => onSetShowPlans(true)}>Cancel</button>
-            </div>
+              <div className={classes.thirdColumnCancel}>
+                <span className={classes.cancelTitle}>
+                  Are you sure you want to unsubscribe?
+                </span>
+                <text className={classes.textCancelSet}>{textCancelTwo}</text>
+              </div>
+              <div className={classes.fourthColumnCancel}>
+                <button className={classes.buttonCacleConfirm}>Confirm</button>
+                <button
+                  className={classes.buttonCacleConfirm}
+                  onClick={() => onSetShowPlans(true)}
+                >
+                  Cancel
+                </button>
+              </div>
             </div>
           </div>
         )}
+      </div>
+      <div className={classes.save}>
+        <button className={classes.buttonSettings}>Save</button>
       </div>
     </div>
   );

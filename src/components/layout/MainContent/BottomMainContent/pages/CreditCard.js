@@ -1,15 +1,7 @@
 import classes from "./CreditCard.module.css";
-import TextBox from "../../../../ui/TextBox";
-
-const description =
-  "Select a valid credit card for your Balance account or add a new card by clicking add new card and filling out the required card information on the left. New card can be selected after being added on the list bellow.";
 
 export default function CreditCard() {
   return (
-    <div className={classes.bottomMainContent}>
-      <div className={classes.leftBottom}>
-      <TextBox heading="Your credit cards" description={description} showCreditCards="true"/>
-      </div>
       <div className={classes.rightBottom}>
         <div className={classes.formContainer}>
           <div className={classes.miniForm}>
@@ -66,6 +58,5 @@ export default function CreditCard() {
           <button className={classes.buttonSettings}>Save</button>
         </div>
       </div>
-    </div>
   );
 }
