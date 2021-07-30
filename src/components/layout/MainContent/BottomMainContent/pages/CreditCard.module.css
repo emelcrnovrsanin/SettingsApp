@@ -1,0 +1,159 @@
+/*Settings for left bottom content*/
+.bottomMainContent {
+  flex: 1;
+  border: 4px solid purple;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.leftBottom {
+  display: flex;
+  border: 4px solid blue;
+  width: 315px;
+  flex-direction: column;
+}
+
+@media (max-width: 800px) {
+  .leftBottom {
+    font-size: 10px;
+    line-height: 10px;
+    align-content: center;
+  }
+}
+.rightBottom {
+  flex: 1;
+  display: flex;
+  border: 4px solid purple;
+  justify-content: center;
+  flex-direction: column;
+}
+.formContainer {
+  flex: 1;
+  display: flex;
+  border: 4px solid purple;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+/*Settings for right bottom content*/
+.miniForm {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid grey;
+
+  flex-direction: column;
+  border: 2px solid grey;
+
+  min-width: 100px;
+  max-width: 450px;
+}
+
+.topMiniForm {
+  display: flex;
+  border: 2px solid blue;
+  flex-direction: column;
+  padding-bottom: 45px;
+}
+
+.bottomMiniForm {
+  display: flex;
+  flex-direction: row;
+  border: 2px solid green;
+  justify-content: space-between;
+}
+
+.inputBottomLeft {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  padding-right: 4px;
+}
+
+.inputBottomRight {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding-left: 4px;
+}
+
+.title {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #011f4b;
+}
+
+.title:hover {
+  text-decoration-style: solid;
+  text-decoration-line: underline;
+  text-decoration-color: #0db2f2;
+  cursor: default;
+}
+
+.inputSettingsCardNumber {
+  display: flex;
+  min-width: 219px;
+  max-width: 450px;
+  height: 56px;
+  background-color: #f3f6f9;
+  border-radius: 10px;
+
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: center;
+  border: none;
+}
+.inputSettings:hover {
+  border: 4px solid #0db2f2;
+  cursor: default;
+}
+@media (max-width: 600px) {
+  .inputSettings {
+    font-size: 16px;
+    width: 250px;
+    height: 36px;
+  }
+}
+
+.buttonSettings {
+  width: 118px;
+  height: 32px;
+  background-color: #1bc5bd;
+  color: #ffffff;
+
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .buttonSettings {
+    font-size: 12px;
+    width: 90px;
+    height: 30px;
+  }
+}
+.buttonSettings:hover {
+  border: 4px solid #0db2f2;
+}
+
+.save {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 138px;
+}

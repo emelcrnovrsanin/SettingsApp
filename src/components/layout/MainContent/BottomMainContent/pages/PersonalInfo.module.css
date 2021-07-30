@@ -1,0 +1,175 @@
+.bottomMainContent {
+  flex: 1;
+  border: 4px solid purple;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.leftBottom {
+  display: flex;
+  border: 4px solid blue;
+  width: 315px;
+}
+@media (max-width: 800px) {
+  .leftBottom {
+    font-size: 10px;
+    line-height: 10px;
+    align-content: center;
+  }
+}
+.rightBottom {
+  flex: 1;
+  display: flex;
+  border: 4px solid purple;
+}
+
+/*Settings for Form*/
+
+.formDiv {
+  width: 100%;
+  display: flex;
+  border: 4px solid grey;
+  flex-direction: column;
+}
+
+.nameLastEmailMobile {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.nameLast {
+  display: flex;
+  flex-direction: column;
+}
+
+.emailMobile {
+  display: flex;
+  flex-direction: column;
+}
+
+.paswordAndConfir {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.info {
+  display: flex;
+  height: 80px;
+  background-color: #ffffff;
+  border: 2px solid red;
+  padding-left: 5%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #b5b5c3;
+}
+
+@media (max-width: 600px) {
+  .info {
+    font-size: 10px;
+    width: 180px;
+    height: 60px;
+    line-height: 10px;
+  }
+}
+
+.save {
+  display: flex;
+  justify-content: flex-end;
+}
+@media (max-width: 600px) {
+  .save {
+    align-content: center;
+    justify-content: center;
+  }
+}
+
+.titleAndInput {
+  display: flex;
+  flex-direction: column;
+  min-width: 100px;
+  padding-top: 39px;
+}
+
+.titles {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #011f4b;
+}
+.titles:hover {
+  text-decoration-style: solid;
+  text-decoration-line: underline;
+  text-decoration-color: #0db2f2;
+  cursor: default;
+}
+
+.inputSettings {
+  display: flex;
+  max-width: 450px;
+  min-width: 380px;
+  height: 56px;
+  background-color: #f3f6f9;
+  border-radius: 10px;
+
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: center;
+  border: none;
+}
+.inputSettings:hover {
+  border: 4px solid #0db2f2;
+  cursor: default;
+}
+@media (max-width: 600px) {
+  .inputSettings {
+    font-size: 16px;
+    width: 250px;
+    height: 36px;
+  }
+}
+/**/
+.buttonSettings {
+  width: 118px;
+  height: 32px;
+  background-color: #1bc5bd;
+  color: #ffffff;
+
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .buttonSettings {
+    font-size: 12px;
+    width: 90px;
+    height: 30px;
+  }
+}
+.buttonSettings:hover {
+  border: 4px solid #0db2f2;
+}

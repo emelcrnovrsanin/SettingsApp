@@ -1,0 +1,6 @@
+.txt:hover {
+  text-decoration-style: solid;
+  text-decoration-line: underline;
+  text-decoration-color: #0db2f2;
+  cursor: default;
+}

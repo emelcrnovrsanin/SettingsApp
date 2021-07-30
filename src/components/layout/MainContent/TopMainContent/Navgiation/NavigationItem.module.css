@@ -1,0 +1,19 @@
+.navMenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+  text-align: center;
+}
+
+.navItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+}
+
+.iconNavbar {
+  height: 50px;
+  width: 50px;
+}

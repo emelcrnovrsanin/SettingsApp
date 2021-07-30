@@ -1,0 +1,55 @@
+.titleAndBox {
+  display: flex;
+  flex-direction: column;
+  width: 277px;
+  height: 155px;
+  margin-top: 43px;
+}
+@media (max-width: 800px) {
+  .titleAndBox {
+    margin-top: 0px;
+  }
+}
+
+.textBox {
+  display: inline-block;
+  height: 131px;
+  width: 277px;
+  background-color: #0db2f2;
+  border-radius: 10px;
+  margin-left: 1px;
+  margin-top: 5px;
+}
+.innerTextBox {
+  flex: 1;
+  margin-left: 18px;
+  margin-right: 15px;
+}
+
+.textBox:hover {
+  border: 3px solid blue;
+}
+
+.textt {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffffff;
+}
+
+.title {
+  color: #011f4b;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+}

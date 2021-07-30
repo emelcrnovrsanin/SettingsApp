@@ -1,0 +1,14 @@
+.classNav {
+  margin-left: 166px;
+  width: 576px;
+  height: 85px;
+}
+
+.navMenu {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 10px;
+  list-style: none;
+  text-align: center;
+  justify-content: center;
+}

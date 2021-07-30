@@ -1,22 +1,23 @@
 import classes from "./Header.module.css";
-
-import NameHeader from "./NameHeader";
-import Initials from "./Initials";
-import Logo from "./Logo";
-
+import InitialsCard from "../../ui/Initials/InitialsCard";
+import Name from "../../ui/Name/Name";
+import logoImage from "./ImageHeader/logoImage.png";
 
 export default function Header() {
   return (
-    <div className={classes.classHeader}>
-      <div className={classes.leftHeader}>
-        <Logo />
+    <div className={classes.containerHeader}>
+      <div className={classes.header}>
+        <div className={classes.leftHeader}>
+          <section>
+            <img src={logoImage} alt="menu" />
+          </section>
+        </div>
+        <div className={classes.rightHeader}>
+          <InitialsCard isBox={true} />
+          <Name isBlue={true} />
+        </div>
       </div>
-      <div className={classes.centerHeader}>
-        <Initials className={classes.cssLogo} />
-      </div>
-      <div className={classes.rightHeader}>
-        <NameHeader />
-      </div>
+      <div className={classes.line}></div>
     </div>
   );
 }
