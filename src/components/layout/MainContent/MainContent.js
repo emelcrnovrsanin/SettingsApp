@@ -3,19 +3,8 @@ import BottomMainContent from "./BottomMainContent/BottomMainContent";
 import Txt from "../../ui/Txt";
 import Navigation from "./TopMainContent/Navgiation/Navigation";
 import InitialsInfoBox from "../../ui/InitialsInfoBox";
-import { useLayoutEffect, useState } from "react";
 
 function MainContent() {
-  const [screenSize, setScreenSize] = useState(1024);
-
-  useLayoutEffect(() => {
-    setScreenSize(window.innerWidth);
-    window.addEventListener("resize", () => setScreenSize(window.innerWidth));
-    return () =>
-      window.removeEventListener("resize", () =>
-        setScreenSize(window.innerWidth)
-      );
-  }, []);
   return (
     <div className={classes.containerMainContent}>
       <div className={classes.topMainContent}>
@@ -27,13 +16,7 @@ function MainContent() {
             <Txt>You can modify personal information here</Txt>
           </span>
         </div>
-        <div
-          className={
-            screenSize > 800
-              ? classes.topMainContentBottom
-              : classes.topMainContentBottom2
-          }
-        >
+        <div className={classes.topMainContentBottom}>
           <div className={classes.cardSide}>
             <InitialsInfoBox />
           </div>
