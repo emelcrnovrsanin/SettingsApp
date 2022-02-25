@@ -1,3 +1,12 @@
+![1](https://user-images.githubusercontent.com/71407528/155768138-ea6a841b-b503-4c6a-8ebd-6b6939556ece.png)
+![2](https://user-images.githubusercontent.com/71407528/155768154-70964830-78c0-4036-b347-12c6ae4b30e1.png)
+![3](https://user-images.githubusercontent.com/71407528/155768163-d5125f3b-94be-49d7-a83e-f1f995d18a5d.png)
+![4](https://user-images.githubusercontent.com/71407528/155768169-d9189324-83e9-4d59-9cbf-66d2f182d120.png)
+![5](https://user-images.githubusercontent.com/71407528/155768178-7eefa21e-eb14-4a83-9e19-9d267537f368.png)
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -31,7 +40,8 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**![Uploading 1.png…]()
+
 
 If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
